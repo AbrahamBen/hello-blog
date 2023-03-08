@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        <a href="">AHLIAD BLOG</a>
+        <a href="" className="logo">AHLIAD BLOG</a>
       </div>
       <ul className="liens">
         <li>
@@ -12,7 +12,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <a href="" className="lien">
+          <a href="" className="lien buttonArticle">
             Créer un article
           </a>
         </li>
