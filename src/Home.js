@@ -1,6 +1,16 @@
+import { useState } from "react";
 const Home = () => {
+
+    let initialName = 'Ben Abraham';
+    let changeName='Dahlia Honorine';
+    const actualAge = 29;
+
+    const [name,setName] = useState(initialName);
+    const [age,setAge] = useState(actualAge);
+
     const handlerClikc =()=>{
-        console.log('you are clicked me');
+        setName(changeName);
+        setAge(27);
     };
 
     const handlerClikcAgain =(name, event)=>{
@@ -8,6 +18,7 @@ const Home = () => {
     };
     return ( 
         <div className="home">
+            <h2>{name} a {age} ans</h2>
             <h2>Notre page d'accueil</h2>
             <button onClick={handlerClikc}>
                 Ckick me
